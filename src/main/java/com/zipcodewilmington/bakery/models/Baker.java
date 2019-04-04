@@ -1,9 +1,18 @@
 package com.zipcodewilmington.bakery.models;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
 
+@Entity
+@Table(name = "baker_table")
 public class Baker {
+
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String name;
